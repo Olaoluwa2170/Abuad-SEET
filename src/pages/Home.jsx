@@ -1,6 +1,7 @@
 import img from '../assets/img/Abuad.jpg'
 import engr from '../assets/icons/engineer-worker-svgrepo-com.svg'
 import { useTypedSuperpower } from './useTypedSuperpower'
+import BgPictures from './BgPictures'
 
 const Welcomes = ['WELCOME TO THE SCHOOL OF ENGINEERING','THE BEST SCHOOL', 'ABUAD']
 
@@ -22,7 +23,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <img src={img} className='md:h-[500px] w-full' alt="" />
+                <BgPictures/>
+
             </div>
         </div>
     )

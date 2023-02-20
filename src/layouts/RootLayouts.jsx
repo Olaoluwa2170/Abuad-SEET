@@ -9,8 +9,9 @@ const RootLayouts = () => {
     let [open, setOpen]=useState(false)
     return (
     <>
-        <header>
-            <nav className="w-full items-center md:flex bg-gradient-to-r  to-primary-light from-blue-500 p-5 md:justify-between shadow-md">
+        <header className="md:fixed md:w-full top-0 z-50">
+            <nav className="w-full items-center md:flex bg-gradient-to-r
+              to-primary-light from-blue-500 p-5 md:justify-between shadow-md">
                 <div className="ml-5 font-bold text-lg ">
                     <a href="" className="flex ">
                         <img src="../assets/img/Logo.png" className="w-12  mr-3"></img>
@@ -39,7 +40,8 @@ const RootLayouts = () => {
                 
             </nav>
         </header>
-        <main className={`md:mt-0 ${open ? 'mt-[300px]' : 'mt-0'} absolute w-full transition-all duration-500 ease-out `}>
+        <main className={`md:mt-0 ${open ? 'mt-[300px]' : 'mt-0'} 
+        absolute w-full transition-all duration-500 ease-out `}>
             <Outlet />
         </main>
     </>

@@ -39,5 +39,8 @@
     .bg-picture{
         @apply md:h-[500px] w-full shadow-sm shadow-oran md:mt-24
     }
+    .list-img{
+        @apply w-5 inline hover:w-6 duration-200
+    }
 }
 

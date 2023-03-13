@@ -26,7 +26,7 @@ const RootLayouts = () => {
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="text">
-                        <NavLink to="about">About</NavLink>
+                        <NavLink to="about">News</NavLink>
                     </li>
                     <li className="text">
                         <NavLink to="about">Contact</NavLink>

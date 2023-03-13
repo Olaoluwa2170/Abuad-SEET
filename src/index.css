@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 
+
 @layer components{
     .navList {
         @apply font-bold md:flex md:ml-52 md:items-center md:gap-20 md:text-xl 
@@ -37,10 +38,124 @@
        }         
     }
     .bg-picture{
-        @apply md:h-[500px] w-full shadow-sm shadow-oran md:mt-24
+        @apply md:h-[500px] h-[320px] w-full shadow-sm shadow-oran md:mt-24
     }
     .list-img{
         @apply w-5 inline hover:w-6 duration-200
     }
+    .overview{
+        @apply  font-black m-8 text-3xl relative
+    }
+    .overview:after {
+        @apply content-[''] bg-oran h-[3px] w-[15%] left-0 -bottom-[5px] 
+        rounded-xl absolute
 }
 
+    
+    .box{
+        @apply bg-slate-100 rounded-lg shadow-md
+    }
+    
+}
+
+
+.project{
+    background-image: url(./assets/img/design-ux-engineering-and-art_0.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Alumni{
+    background-image: url(./assets/img/service-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.body{
+    background-color: rgb(17, 24, 39);
+    
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px;
+    max-width: 916px;
+    width: calc(100% - 20px);
+}
+
+#cards:hover > .card > .card-border {
+    opacity: 1;
+}
+
+.card {
+    
+    background-color: rgba(241, 124, 70, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    width: 300px;
+    
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card:before, 
+.card > .card-border{
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+         rgba(23, 6, 1, 0.06),
+          transparent 40%);
+          border-radius: inherit;
+          content: "";
+          height: 100%;
+          left: 0px;
+          opacity: 0;
+          position: absolute;
+          top: 0px;
+          transition: opacity 500ms;
+          width: 100%;
+          z-index: 2;
+}
+
+.card:before{
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+         rgba(255, 255, 255, 0.1),
+          transparent 40%);
+          z-index: 3;
+}
+
+.card > .card-border{
+    background: radial-gradient(
+        400px circle at var(--mouse-x) var(--mouse-y),
+         rgba(255,255,255,0.3),
+          transparent 40%);
+          z-index: 1;
+}
+
+.card > .card-content{
+    background-color:rgb(40, 47, 60);
+    border-radius: inherit;
+    height: calc(100% - 2px);
+    margin: 1px;
+    position: relative;
+    width: calc(100% - 2px);
+    z-index: 2;
+}
+
+
+#pic-holder{
+    background-image: url('../assets/img/testimonial-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

@@ -20,7 +20,7 @@ module.exports = {
         "montserrat": 'Montserrat'
       },
       backgroundImage: {
-        'home-background': "url('../assets/img/logo.png')"
+        'homebg': "url('../assets/img/logo.png')"
       }
     },
   },

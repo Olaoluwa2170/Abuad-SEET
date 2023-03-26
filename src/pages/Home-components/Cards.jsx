@@ -51,20 +51,21 @@ export const Card = () => {
                 
     </div>)}
 
-    const CourseBox = ({Header, text, text2, img, screw}) => {return(
-        <div className="box">
-                <div className='relative h-[100%]'>
-                    <img src={img} className="h-[250px] w-full rounded-t-lg" alt="" />
-                    <div className="absolute hidden md:block md:bottom-44 left-[176px] md:left-36">
-                        <div className="w-20 h-20 relative rounded-full bg-slate-100 "><img src={screw} className='w-10 absolute ml-5 mt-5 ' alt="" /></div>
-                    </div>
-                    <div className=' w-full flex-col text-center'>
-                        <h1 className='font-black md:text-[1.5vw] mt-10'>{Header}</h1>
-                        <p className='text-sm mt-2 m-2 mb-5'>{text}<br/>{text2}</p>
-                    </div>
+const CourseBox = ({Header, text, text2, img, screw}) => {return(
+    <div className="box">
+            <div className='relative h-[100%]'>
+                <img src={img} className="h-[250px] w-full rounded-t-lg" alt="" />
+                <div className="absolute hidden md:block md:bottom-44 left-[176px] md:left-36">
+                    <div className="w-20 h-20 relative rounded-full bg-slate-100 "><img src={screw} className='w-10 absolute ml-5 mt-5 ' alt="" /></div>
                 </div>
-                                                                
-        </div>) }   
+                <div className=' w-full flex-col text-center'>
+                    <h1 className='font-black md:text-[1.5vw] mt-10'>{Header}</h1>
+                    <p className='text-sm mt-2 m-2 mb-5'>{text}<br/>{text2}</p>
+                </div>
+            </div>
+                                                            
+    </div>) }   
+
 
 
  

@@ -20,17 +20,27 @@ const Home = () => {
     return(
         <div className="">
             <div className='relative'>
-                <div className='absolute flex justify-center md:mt-0 mt-16 md:items-center w-full h-screen '>
-                    <div className="md:mb-0 ">
-                        <div className="flex w-full justify-center">
-                            <img src={engr} alt="engr" className='w-32 mb-8 hover:w-36 duration-300' />
+                
+                    
+                        <div className='md:mt-'>
+                            <div className='absolute md:-bottom-16 flex justify-center md:mt-0 mt-16 md:items-center w-full md:h-screen '>
+                                <div className='flex w-full justify-center '>
+                                    <div className="">
+                                        <img src={engr} alt="engr" className='w-32 bg-primary rounded-lg mb-8 hover:w-36 duration-300' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='absolute flex justify-center md:mt-0 items-center w-full md:h-screen mt-52' >
+                                <div>
+                                    <div className='text-[3vw] font-[800]
+                                                    text-white mb-8 top-32'>
+                                        <h1 className="blinking-cursor " aria-label={selectedWelcome}>{TypedWelcome}</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className='text-[3vw] font-[800]
-                                        text-white mb-8'>
-                            <h1 className="blinking-cursor" aria-label={selectedWelcome}>{TypedWelcome}</h1>
-                        </div>
-                    </div>
-                </div>
+                    
+                
                 <BgPictures/>
             </div>
             <Overview/>

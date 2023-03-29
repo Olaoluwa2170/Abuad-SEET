@@ -1,3 +1,5 @@
+import img from '../../src/assets/img/IMG_0371.jpg'
+
 const About = () => {
     return (
         <div className="md:mt-[100px] h-screen bg-[#D6DEED]">
@@ -12,7 +14,7 @@ const About = () => {
                 </div>        
                 </div>
             <div>
-                <img className="h-[400px] mt-10 w-full" src={'../../assets/img/lng.jpg'} alt="" />
+                <img className="h-[400px] mt-10 w-full" src={img} alt="" />
             </div>
 
         </div>

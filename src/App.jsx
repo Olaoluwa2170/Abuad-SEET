@@ -1,8 +1,7 @@
 import {
-  createBrowserRouter,
   Route,
-  createRoutesFromElements,
-  RouterProvider
+  Routes,
+  HashRouter
 } from 'react-router-dom'
 
 // pages
@@ -12,23 +11,21 @@ import About from './pages/About'
 //layout
 import RootLayouts from './layouts/RootLayouts'
 
-const router = createBrowserRouter(
-        createRoutesFromElements(
-          <Route path="/" element={<RootLayouts/>}>
-              <Route index element={<Home/>}/>
-              <Route path='about' element={<About/>}/>
-          </Route>
-        )
-)
+
 
 
 function App() {
   
 
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <HashRouter>
+        <Routes>
+          <Route path="/" element={<RootLayouts/>}>
+              <Route index element={<Home/>}/>
+              <Route path='about' element={<About/>}/>
+          </Route>
+          </Routes>
+        </HashRouter>
   )
 }
 

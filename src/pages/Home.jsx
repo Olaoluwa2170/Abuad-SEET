@@ -4,8 +4,7 @@ import BgPictures from './BgPictures'
 import Overview from './Home-components/Overview'
 import Courses from './Home-components/Courses'
 import Project from './Home-components/Project'
-import Lecturer from './Home-components/Lecturer'
-import Aluminus from './Home-components/Aluminus'
+
 import Cursor from './Home-components/Cursor'
 import Alumni from './Home-components/Aluminus'
 import Footer from './Home-components/Footer'
@@ -26,7 +25,7 @@ const Home = () => {
                             <div className='absolute md:-bottom-16 flex justify-center md:mt-0 mt-16 md:items-center w-full md:h-screen '>
                                 <div className='flex w-full justify-center '>
                                     <div className="">
-                                        <img src={engr} alt="engr" className='w-32 bg-primary rounded-lg mb-8 hover:w-36 duration-300' />
+                                        <img src={engr} alt="engr" className='w-32 bg-primary rounded-lg mb-52 hover:w-36 duration-300' />
                                     </div>
                                 </div>
                             </div>
